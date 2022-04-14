@@ -3,6 +3,7 @@
     <td>{{ todoTitle }}</td>
     <td>{{ todoHour }}</td>
     <td>{{ todoWorker }}</td>
+    <slot/>
   </table>
 </template>
 
@@ -12,7 +13,7 @@ export default {
   props: {
     "todoTitle": String,
     "todoHour": Number,
-    "todoWorker": String,
+    "todoWorker": String
   }
 }
 </script>
